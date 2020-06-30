@@ -1,0 +1,12 @@
+1. a: 啊
+
+2. higha.wav : hello! 你好！
+
+3. bluesky.wav: 蓝天, 白云，碧绿的大海
+
+4. meeting.wav: 会议通过了一个行动纲领 
+
+5. economic.wav: 走进了经济生活
+
+6. tone4.wav: 妈妈，好吗，上马，骂人
+
