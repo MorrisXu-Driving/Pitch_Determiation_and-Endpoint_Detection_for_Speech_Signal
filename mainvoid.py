@@ -114,8 +114,9 @@ if __name__ == '__main__':
     plt.ylabel('Magnitude')
     plt.xlabel('time/s')
     plt.title('Energy/Spectral Entropy ratio')
-    plt.axhline(T1, 0, np.max(frameTime), color='r', linestyle='--', label='T1')
-    plt.plot(frameTime, T2, color='r', linewidth=1, label='T2')
+    plt.axhline(T1, 0, np.max(frameTime), color='r', linestyle='--', label='T1:speech')
+    plt.plot(frameTime, T2, color='r', linewidth=1, label='T2:mainbody')
+    plt.legend()
 
     for k in range(0, vsl):
         plt.axvline(frameTime[vseg.begin[k]], 0, np.nanmax(Ef), color='k', linestyle='-')
