@@ -6,10 +6,10 @@ import soundfile as sf
 
 if __name__ == '__main__':
     # Initialization of main parameters
-    wave, fs = sf.read('tone4_w.wav')
+    wave, fs = sf.read('tone4_m.wav')
     wave_data = wave - np.mean(wave)
     N = len(wave_data)
-    IS = 0.5  # Observe the waveform of the input audio and set non-speech time at the start of the input in second
+    IS = 0.8  # Observe the waveform of the input audio and set non-speech time at the start of the input in second
     wlen = int(0.03 * fs)
     inc = int(0.01 * fs)
     NIS = round((IS * fs - wlen) / inc + 1)  # The number of frames for the non-speech signal at the start
@@ -34,10 +34,10 @@ if __name__ == '__main__':
     frameTime = func.frame2time(fn, wlen, inc, fs)  # Time scale for each frame
 
     # Initialization for parameters
-    r1= 0.025  # Threshold Coefficient for judging speech segment
-    r2 = 0.3  # Threshold Coefficient for judging mainbodys in a speech segment
+    r1= 0.03  # Threshold Coefficient for judging speech segment
+    r2 = 0.26  # Threshold Coefficient for judging mainbodys in a speech segment
     ThrC = [10, 15]  # Max difference in F0 between adjacent frames
-    miniL = 5  # Minimum length for a speech segment
+    miniL = 10  # Minimum length for a speech segment
     mnlong = 3  # Minimum length for a vowel major body
 
     # 2. Start detection for the endpoints of speech segments and vowels
@@ -114,8 +114,8 @@ if __name__ == '__main__':
     plt.ylabel('Magnitude')
     plt.xlabel('time/s')
     plt.title('Energy/Spectral Entropy ratio')
-    plt.axhline(T1, 0, np.max(frameTime), color='r', linestyle='--', label='T1:distinguish speech segment')
-    plt.plot(frameTime, T2, color='r', linewidth=1, label='T2:distinguish vowel main body')
+    plt.axhline(T1, 0, np.max(frameTime), color='r', linestyle='--', label='T1')
+    plt.plot(frameTime, T2, color='r', linewidth=1, label='T2')
 
     for k in range(0, vsl):
         plt.axvline(frameTime[vseg.begin[k]], 0, np.nanmax(Ef), color='k', linestyle='-')
