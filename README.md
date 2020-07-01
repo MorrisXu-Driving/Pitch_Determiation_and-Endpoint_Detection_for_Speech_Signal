@@ -24,7 +24,7 @@ It is a Pitch Determination Algorithm based on Short-time Autocorrelation and Sh
   - `mnlong = 3`  # Minimum length for a major body in speech segments
   
  # 3. Result Demo
- ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/blob/master/venv/readme_img/Pitch%20Extracated%20from%20the%20test%20file.JPG)
+ ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/blob/master/venv/readme_img/Pitch%20Extracated%20from%20the%20test%20file.JPG)  
  The above diagram consists of the spectrogram of the input audio and the pitch extracted from the input file.
   
  # 4. Conclusion
