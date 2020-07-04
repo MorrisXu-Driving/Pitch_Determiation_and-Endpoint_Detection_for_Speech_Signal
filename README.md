@@ -36,7 +36,7 @@ It is a Pitch Determination Algorithm based on Short-time Autocorrelation and Sh
  # 4. Result Demo
  ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/blob/master/venv/readme_img/Pitch%20Extracated%20from%20the%20test%20file.JPG)  
  The above diagram consists of the spectrogram of the input audio and the pitch extracted from the input file. The pitch extracted(in white line) highly correlated with the first harmonic frequency shwon from the STFT spectrogram, which reveals that the algorithm is working properly. 
- ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/tree/master/venv/readme_img)
+ ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/blob/master/venv/readme_img/Result.JPG)
  The RMSE in Hz of the results tested from the wav files in speech_signal_for_test/.  
 
   
