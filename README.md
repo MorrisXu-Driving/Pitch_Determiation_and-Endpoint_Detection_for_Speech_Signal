@@ -13,7 +13,7 @@ It is a Pitch Determination Algorithm based on Short-time Autocorrelation and Sh
 - ## c. Candidate Generation
     ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/blob/master/venv/readme_img/Candidate%20Generation.png)
 - ## d. Postprocessing
-    ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/blob/master/venv/readme_img/PostProcessing.png)
+    ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/blob/master/venv/readme_img/Post-Processing.png)
 
 # 3. Parameter Setting
  In this algorithm we have: 
