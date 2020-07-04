@@ -22,7 +22,7 @@ It is a Pitch Determination Algorithm based on Short-time Autocorrelation and Sh
   - `inc = int(0.01 * fs)`  # 0.01 stands for inc in time domain, here the inc is 10ms.
   ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/blob/master/venv/readme_img/Frequency%20Response.JPG)
   - `lf = 60  # Hz`         # lf stands for the lower pass frequency of the bandpass denoising filter 
-  - `hf = 500  # Hz`        # hf stands for the high pass frequency of the bandpass denoising filter
+  - `hf = 500  # Hz`        # hf stands for the upper pass frequency of the bandpass denoising filter
 - **Parameters for pitch determination**
   ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/blob/master/venv/readme_img/Endpoint_Detection.JPG)
   
