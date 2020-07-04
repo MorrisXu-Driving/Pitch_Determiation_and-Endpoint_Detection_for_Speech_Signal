@@ -35,17 +35,17 @@ It is a Pitch Determination Algorithm based on Short-time Autocorrelation and Sh
   
  # 4. Result Demo
  ![Image](https://github.com/MorrisXu-Driving/Pitch_Determiation_for_Speech_Signal/blob/master/venv/readme_img/Pitch%20Extracated%20from%20the%20test%20file.JPG)  
- The above diagram consists of the spectrogram of the input audio and the pitch extracted from the input file.
+ The above diagram consists of the spectrogram of the input audio and the pitch extracted from the input file. The pitch extracted(in white line) highly correlated with the first harmonic frequency shwon from the STFT spectrogram, which reveals that the algorithm is working properly. 
 
   
  # 5. Conclusion
  - The algorithm is not adaptive to differnt types of audio signals. 
    - For those inputs with low SNR(i.e. the background energy between 0-IS is very high already needs to set a low r1)
    - For those inputs with low energy at each speech segments, r2 should be lower in order to better recognize the extended parts besides each mainbodys.
-   - Adaptive parameter setting is needed to have better user experience.
+   - Adaptive parameter setting is needed to have better user experience since too many parameters need to be adjusted to achieve a good performance on different types of speech audios.
  - Future Work
    - Merely extracting the pitch is not friendly for future research. Its combination with forced alignment in char level and word level need to be conducted.
  
 # 6.Networking
-Please do email me if you have any questions at **philosoengineer@outlook.com**. I am open to positions related to speech feature extraction and end-to-end speech recognition       model. I really appreciate if you have relavent R&D positions that I could join in. 
+Please do email me if you have any questions at **philosoengineer@outlook.com**. I am open to positions related to speech feature extraction and end-to-end speech recognition   model. I really appreciate if you have relavent R&D positions that I could join in. 
 
