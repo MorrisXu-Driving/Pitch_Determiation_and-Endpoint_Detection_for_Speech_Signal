@@ -47,7 +47,3 @@ It is a Pitch Determination Algorithm based on Short-time Autocorrelation and Sh
    - Adaptive parameter setting is needed to have better user experience since too many parameters need to be adjusted to achieve a good performance on different types of speech audios.
  - Future Work
    - Merely extracting the pitch is not friendly for future research. Its combination with forced alignment in char level and word level need to be conducted.
- 
-# 6.Networking
-Please do email me if you have any questions at **philosoengineer@outlook.com**. I am open to positions related to speech feature extraction and end-to-end speech recognition   model. I really appreciate if you have relavent R&D positions that I could join in. 
-
